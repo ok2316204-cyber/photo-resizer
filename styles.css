@@ -1,0 +1,159 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background: #f1f5f9;
+    color: #222;
+}
+
+header {
+    background: #2563eb;
+    color: white;
+    text-align: center;
+    padding: 22px;
+}
+
+header h1 {
+    margin: 0;
+}
+
+header p {
+    margin-bottom: 0;
+}
+
+.container {
+    max-width: 650px;
+    margin: 25px auto;
+    padding: 15px;
+}
+
+.card {
+    background: white;
+    padding: 25px;
+    border-radius: 18px;
+    box-shadow: 0 5px 20px rgba(0,0,0,0.12);
+}
+
+.upload {
+    border: 2px dashed #2563eb;
+    padding: 25px;
+    text-align: center;
+    border-radius: 12px;
+    margin-bottom: 20px;
+}
+
+.upload input {
+    margin-top: 10px;
+    max-width: 100%;
+}
+
+label {
+    display: block;
+    font-weight: bold;
+    margin-top: 15px;
+}
+
+input,
+select {
+    width: 100%;
+    padding: 11px;
+    margin-top: 7px;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    font-size: 15px;
+}
+
+.target-row {
+    display: flex;
+    gap: 10px;
+}
+
+.target-row input {
+    flex: 2;
+}
+
+.target-row select {
+    flex: 1;
+}
+
+button {
+    width: 100%;
+    padding: 13px;
+    margin-top: 20px;
+    border: none;
+    border-radius: 8px;
+    background: #2563eb;
+    color: white;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+button:hover {
+    background: #1d4ed8;
+}
+
+#downloadBtn {
+    display: none;
+    background: #16a34a;
+}
+
+.preview {
+    text-align: center;
+    margin-top: 25px;
+}
+
+.preview img {
+    max-width: 100%;
+    max-height: 400px;
+    border-radius: 10px;
+    display: none;
+}
+
+.original-info,
+.size-info {
+    margin-top: 15px;
+    padding: 15px;
+    background: #f8fafc;
+    border-radius: 10px;
+    text-align: left;
+    line-height: 1.8;
+}
+
+.original-info:empty,
+.size-info:empty {
+    display: none;
+}
+
+.size-info strong,
+.original-info strong {
+    color: #2563eb;
+}
+
+#error {
+    color: #dc2626;
+    margin-top: 10px;
+}
+
+footer {
+    text-align: center;
+    padding: 20px;
+    color: #666;
+}
+
+@media (max-width: 600px) {
+
+    .container {
+        margin: 10px auto;
+    }
+
+    .card {
+        padding: 18px;
+    }
+
+    .target-row {
+        gap: 7px;
+    }
+}
