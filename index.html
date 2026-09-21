@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Photo Resizer & Compressor</title>
+
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+
+<header>
+    <h1>📷 Photo Resizer</h1>
+    <p>Resize & Compress Your Photo</p>
+</header>
+
+<div class="container">
+
+    <div class="card">
+
+        <div class="upload">
+            <h2>Select Your Photo</h2>
+            <input type="file" id="photoInput" accept="image/*">
+        </div>
+
+        <!-- Original information -->
+        <div id="originalInfo" class="original-info"></div>
+
+        <label>Target Size</label>
+
+        <div class="target-row">
+            <input type="number" id="targetSize" value="100" min="1">
+
+            <select id="unit">
+                <option value="KB">KB</option>
+                <option value="MB">MB</option>
+            </select>
+        </div>
+
+        <label>Maximum Width</label>
+        <input type="number" id="maxWidth" value="2000">
+
+        <label>Maximum Height</label>
+        <input type="number" id="maxHeight" value="2000">
+
+        <label>Image Format</label>
+
+        <select id="format">
+            <option value="image/jpeg">JPG</option>
+            <option value="image/webp">WEBP</option>
+            <option value="image/png">PNG</option>
+        </select>
+
+        <button id="compressBtn">
+            Compress Photo
+        </button>
+
+        <div class="preview">
+
+            <h3>Preview</h3>
+
+            <img id="previewImage">
+
+            <!-- Size information -->
+            <div id="sizeInfo" class="size-info"></div>
+
+            <div id="error"></div>
+
+        </div>
+
+        <button id="downloadBtn">
+            ⬇️ Download Photo
+        </button>
+
+    </div>
+
+</div>
+
+<footer>
+    © 2026 My Photo Resizer
+</footer>
+
+<script src="script.js"></script>
+
+</body>
+</html>
